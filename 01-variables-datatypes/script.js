@@ -55,3 +55,36 @@ if (isAge >= 20) {
 } else {
   console.log(`Pass go house`);
 }
+
+// Working with Objects
+/**
+ * Objects in javacript are very impirtant because they form the
+ * buildin blocks of the language.
+ * Objects are used to group or store related data
+ *
+ * syntax:
+ * const var_name = {
+ *  property: value,
+ * }
+ * To access object properties, we use the dot operator (.)
+ * example var_name.property
+ *
+ * Some Examples of the Object datatypes are the Array and Date
+ */
+
+const person = {
+  name: "Chu",
+  age: 22,
+};
+
+console.log(person);
+
+// Arrays
+
+const arr = [10, 12, 14, 16];
+
+console.log(arr);
+
+// Date
+const date = Date();
+console.log(date);
