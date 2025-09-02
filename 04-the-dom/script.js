@@ -21,3 +21,5 @@ div.innerHTML = "<h1>Hola amigo</h1>"
 document.body.appendChild(div)
 
 console.log(div);
+
+let menu = document.getElementById('menu')
