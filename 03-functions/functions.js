@@ -31,3 +31,10 @@ function add(num1, num2) {
 }
 let result = add(5,3)
 console.log(result);
+
+// es6 or es2015 arrow functions
+const square = (x) => {
+  return x * x;
+}
+
+console.log(square(2));
