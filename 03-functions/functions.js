@@ -10,4 +10,24 @@ function studentList() {
   ]
 }
 
+// let students = studentList()
+// console.log(students);
 console.log(studentList());
+
+function greet(name) {
+  return `Hello, ${name}!`
+}
+
+function greet1(name){
+  console.log(`Hello, ${name}!`);
+}
+
+greet1('Alice')
+
+console.log(greet('Chu'));
+
+function add(num1, num2) {
+  return num1 + num2;
+}
+let result = add(5,3)
+console.log(result);
