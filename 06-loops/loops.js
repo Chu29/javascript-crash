@@ -1,15 +1,15 @@
 'use strict'
 
-// let mixed = [1, 'two', 3, 'four', 5]
+let mixed = [1, 'two', 3, 'four', 5]
 
-// for (let index = 0; index < mixed.length; index++) {
-//   const element = mixed[index];
-//   console.log(element);
-// }
+for (let index = 0; index < mixed.length; index++) {
+  const element = mixed[index];
+  console.log(element);
+}
 
-// for(let index = mixed.length - 1; index >=0; index--){
-//   console.log(mixed[index]);
-// }
+for(let index = mixed.length - 1; index >=0; index--){
+  console.log(mixed[index]);
+}
 
 let students = [
   ['emmanuel', 30, 'PWD', 'NW'],
@@ -21,20 +21,20 @@ let students = [
 ]
 
 // print out the students
-// for(let i = 0; i < students.length; i++){
+for(let i = 0; i < students.length; i++){
 
-//   if(i >= 2) break;
-//   let student = students[i];
-//   console.log(student);
-
-//   for(let j = 0; j < student.length; j++){
-//     console.log(student[j]);
-//   }
-// }
-
-for (const student of students) {
+  if(i >= 2) break;
+  let student = students[i];
   console.log(student);
-  for (const detail of student) {
+
+  for(let j = 0; j < student.length; j++){
+    console.log(student[j]);
+  }
+}
+
+for (let student of students) {
+  console.log(student);
+  for (let detail of student) {
     console.log(detail);
   }
 }
