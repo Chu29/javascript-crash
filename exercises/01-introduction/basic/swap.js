@@ -1,11 +1,14 @@
-let a = 2
-let b = 5
-let temp
+const swap = () => {
+  let a = 2;
+  let b = 5;
+  let temp;
+  console.log("Before swap: ", a, b);
 
-console.log(a, b);
+  //swap
+  temp = a;
+  a = b;
+  b = temp;
+  console.log("After swap: ", a, b);
+};
 
-temp = a
-a = b
-b = temp
-
-console.log(a, b)
+swap();
