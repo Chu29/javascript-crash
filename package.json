@@ -1,4 +1,6 @@
 {
+  "type": "module",
+  "name": "rebase-js-coursework",
   "dependencies": {
     "prompt-sync": "^4.2.0"
   }
