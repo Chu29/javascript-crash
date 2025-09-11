@@ -3,7 +3,7 @@ let prompt = require("prompt-sync")();
 const input = prompt("Enter a number: ");
 
 if (input <= 1) {
-  return console.log("Invalid");
+  console.log("Invalid");
 }
 
 for (let i = 2; i < input; i++) {
@@ -12,4 +12,4 @@ for (let i = 2; i < input; i++) {
   }
 }
 
-return console.log("Prime number");
+console.log("Prime number");
