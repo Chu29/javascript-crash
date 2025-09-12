@@ -1,0 +1,5 @@
+const getRandomNumber = (max) => {
+  return Math.ceil(Math.random() * max);
+};
+
+console.log(getRandomNumber(100));
