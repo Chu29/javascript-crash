@@ -18,11 +18,11 @@ function greet(name) {
   return `Hello, ${name}!`;
 }
 
+greet1("Alice");
+
 function greet1(name) {
   console.log(`Hello, ${name}!`);
 }
-
-greet1("Alice");
 
 console.log(greet("Chu"));
 
@@ -38,5 +38,3 @@ const square = (x) => {
 };
 
 console.log(square(2));
-
-export { studentList };
