@@ -31,7 +31,7 @@ console.log(strIterator.next());
 
 console.log("\n\n");
 
-function displayEvent(arr) {
+function displayEven(arr) {
   let i = 0;
   return {
     next() {
@@ -46,7 +46,7 @@ function displayEvent(arr) {
   };
 }
 
-const eveIterator = displayEvent(arr);
+const eveIterator = displayEven(arr);
 
 console.log(eveIterator.next());
 console.log(eveIterator.next());

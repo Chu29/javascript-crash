@@ -1,32 +1,58 @@
 function displayVowels(str) {
   const vowels = new Set(["a", "e", "i", "o", "u"]);
-  const iterator = str[Symbol.iterator]();
-  let result = iterator.next();
-  let vowelStr = "";
-
-  while (!result.done) {
-    if (vowels.has(result.value)) {
-      vowelStr += result.value;
-    }
-    result = iterator.next();
-  }
-  console.log(vowelStr);
+  let i = 0;
+  return {
+    next() {
+      while (i < str.length && !vowels.has(str[i].toLowerCase())) {
+        i++;
+      }
+      return {
+        value: i >= str.length ? undefined : str[i],
+        done: i++ > str.length ? true : false,
+      };
+    },
+  };
 }
 
 function displayConsonant(str) {
   const vowels = new Set(["a", "e", "i", "o", "u"]);
-  const iterator = str[Symbol.iterator]();
-  let result = iterator.next();
-  let consonantStr = "";
+  let i = 0;
 
-  while (!result.done) {
-    if (!vowels.has(result.value)) {
-      consonantStr += result.value;
-    }
-    result = iterator.next();
-  }
-  console.log("The string contains: ", consonantStr, "consonants");
+  return {
+    next() {
+      while (i < str.length && vowels.has(str[i].toLowerCase())) {
+        i++;
+      }
+      return {
+        value: i >= str.length ? undefined : str[i],
+        done: i++ > str.length ? true : false,
+      };
+    },
+  };
 }
 
-displayVowels("Hello Chu");
-displayConsonant("Hello Chu");
+const vowels = displayVowels("Hello Chu");
+console.log("------Vowels------");
+console.log(vowels.next());
+console.log(vowels.next());
+console.log(vowels.next());
+console.log(vowels.next());
+console.log(vowels.next());
+console.log(vowels.next());
+console.log(vowels.next());
+console.log(vowels.next());
+console.log(vowels.next());
+console.log(vowels.next());
+
+const consonants = displayConsonant("Hello Chu");
+console.log("------Consonants------");
+console.log(consonants.next());
+console.log(consonants.next());
+console.log(consonants.next());
+console.log(consonants.next());
+console.log(consonants.next());
+console.log(consonants.next());
+console.log(consonants.next());
+console.log(consonants.next());
+console.log(consonants.next());
+console.log(consonants.next());
