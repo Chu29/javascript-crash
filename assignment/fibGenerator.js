@@ -7,18 +7,23 @@ function* fibonacciGenerator(number) {
   }
 }
 
-const fibGen = fibonacciGenerator(5);
+const number = 5;
+const fibGen = fibonacciGenerator(number);
 
-console.log(fibGen.next());
-console.log(fibGen.next());
-console.log(fibGen.next());
-console.log(fibGen.next());
-console.log(fibGen.next());
-console.log(fibGen.next());
-console.log(fibGen.next());
-console.log(fibGen.next());
-console.log(fibGen.next());
-console.log(fibGen.next());
-console.log(fibGen.next());
-console.log(fibGen.next());
-console.log(fibGen.next());
+for (let i = 0; i <= number; i++) {
+  console.log(fibGen.next());
+}
+
+// console.log(fibGen.next());
+// console.log(fibGen.next());
+// console.log(fibGen.next());
+// console.log(fibGen.next());
+// console.log(fibGen.next());
+// console.log(fibGen.next());
+// console.log(fibGen.next());
+// console.log(fibGen.next());
+// console.log(fibGen.next());
+// console.log(fibGen.next());
+// console.log(fibGen.next());
+// console.log(fibGen.next());
+// console.log(fibGen.next());
