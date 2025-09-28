@@ -17,7 +17,6 @@
 
   <script>
     function changeText(elt) {
-      console.log(elt);
       elt.innerHTML = "Ooops"
     }
 
@@ -25,8 +24,13 @@
       document.getElementById('date').innerHTML = new Date()
     }
 
+    function changeText() {
+      document.getElementById('myDateBtn').innerHTML = 'Ooops!'
+    }
+
     // document.getElementById('myDateBtn').onclick = displayDate
     document.getElementById('myDateBtn').addEventListener('click', displayDate)
+    document.getElementById('myDateBtn').addEventListener('click', changeText)
   </script>
 </body>
 
